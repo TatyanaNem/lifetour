@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
-  "version": "2.0.0",
+  "name": "Lifetour",
+  "version": "1.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Landing about mountain hiking tours",
   "browserslist": [
     "last 3 versions",
     "IE 11",

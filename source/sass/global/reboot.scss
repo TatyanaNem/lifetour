@@ -17,7 +17,7 @@ html {
   font-size: $fz-default;
   line-height: 24px;
   font-family: $ff-placeholder;
-  color: $color-default-black;
+  color: $color-default-dark;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,13 +30,14 @@ html {
 body {
   width: 100%;
   height: 100%;
-
-  background-color: $color-default-white;
+  font-family: $ff-primary;
+  background-color: $color-default-light;
 }
 
 a {
-  color: $color-default-black;
+  color: $color-default-dark;
   text-decoration: none;
+  user-select: none;
 }
 
 img,
@@ -57,15 +58,16 @@ textarea {
 // если в стилях уже используется box-shadow есть другое решение -
 // задать к списку транзишенов `background-color 10000000s ease-out`
 input:-webkit-autofill {
-  box-shadow: inset 0 0 0 1000px $color-default-white;
+  box-shadow: inset 0 0 0 1000px $color-default-light;
 
-  -webkit-text-fill-color: $color-default-black;
+  -webkit-text-fill-color: $color-default-dark;
 }
 
 // firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
   border-radius: 0;
+  cursor: text;
 
   &::placeholder {
     opacity: 1;
@@ -82,6 +84,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -126,4 +129,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }
