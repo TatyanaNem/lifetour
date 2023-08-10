@@ -17,7 +17,10 @@
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/hero-header-wrapper";
+@import "blocks/header/header";
+@import "blocks/navigation/navigation";
+@import "blocks/header/burger";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";

@@ -1,0 +1,14 @@
+.burger {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &__icon {
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
+}
