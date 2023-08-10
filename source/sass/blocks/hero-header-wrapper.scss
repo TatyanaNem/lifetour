@@ -1,7 +1,26 @@
 .hero-header-wrapper {
   width: 100%;
   min-height: 800px;
-  background: url('../../img/hero/caucasus/caucasus.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  transition: all ease 0.3s;
+
+  &[data-background="caucasus"] {
+    background: url('../../img/hero/caucasus/caucasus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+
+  &[data-background="kamchatka"] {
+    background: url('../../img/hero/kamchatka/kamchatka.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+
+  &[data-background="altai"] {
+    background: url('../../img/hero/altai/altai.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
 }
